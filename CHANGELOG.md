@@ -9,8 +9,8 @@
 #### API changes
 
 * `Pry::Prompt` is a class now and it can be instantiated to create new prompts
-  on the fly that are not registered with `Pry::Prompt#add`
-  ([#1877](https://github.com/pry/pry/pull/1877))
+  on the fly that are not registered with `Pry::Prompt#add`. Learn more about
+  its API in the docs ([#1877](https://github.com/pry/pry/pull/1877))
 
 #### Deprecations
 
