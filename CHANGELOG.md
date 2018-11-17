@@ -1,5 +1,58 @@
 ### HEAD
 
+#### Features
+
+* Added metadata to the gem (such as changelog URI, source code URI & bug
+  tracker URI), so it shows on https://rubygems.org/gems/pry
+  ([#1869](https://github.com/pry/pry/pull/1869))
+
+#### API changes
+
+* `Pry::Prompt` is a full class now and it can be instantiated to create new
+  prompts that are not registered with `Pry::Prompt#add`
+  ([#1877](https://github.com/pry/pry/pull/1877))
+
+#### Deprecations
+
+* Deprecated `Pry.config.exception_whitelist` in favor of
+  `Pry.config.unrescued_exceptions`
+  ([#1874](https://github.com/pry/pry/pull/1874))
+* Deprecated `Pry.config.prompt = Pry::Prompt[:simple][:value]` in favor of
+  `Pry.config.prompt = Pry::Prompt[:simple]` when setting Pry prompt via
+  `pryrc` ([#1877](https://github.com/pry/pry/pull/1877))
+* Deprecated setting prompt via an array of two procs:
+  ([#1877](https://github.com/pry/pry/pull/1877))
+
+  ```ruby
+  Pry.config.prompt = [proc {}, proc {}]
+  ```
+
+  This will be removed in the next release.
+
+#### Breaking changes
+
+* Deleted deprecated `Pry::Platform`
+  ([#1863](https://github.com/pry/pry/pull/1863))
+* Deleted deprecated `Pry#{input/output}_array`
+  ([#1884](https://github.com/pry/pry/pull/1864))
+* Deleted deprecated `Pry::Prompt::MAP`
+  ([#1866](https://github.com/pry/pry/pull/1866))
+* Deleted deprecated methods of `Pry::Helpers::BaseHelpers`
+  ([#1867](https://github.com/pry/pry/pull/1867))
+  * `mac_osx?`
+  * `linux?`
+  * `windows?`
+  * `windows_ansi?`
+  * `jruby?`
+  * `jruby_19?`
+  * `mri?`
+  * `mri_19?`
+  * `mri_2?`
+* Deleted deprecated `Pry::Command#text`
+  ([#1865](https://github.com/pry/pry/pull/1865))
+* Deleted deprecated `Pry::Method#all_from_common`
+  ([#1868](https://github.com/pry/pry/pull/1868))
+
 ### [v0.12.2][v0.12.2] (November 12, 2018)
 
 #### Bug fixes
