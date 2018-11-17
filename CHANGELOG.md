@@ -8,8 +8,8 @@
 
 #### API changes
 
-* `Pry::Prompt` is a full class now and it can be instantiated to create new
-  prompts that are not registered with `Pry::Prompt#add`
+* `Pry::Prompt` is a class now and it can be instantiated to create new prompts
+  on the fly that are not registered with `Pry::Prompt#add`
   ([#1877](https://github.com/pry/pry/pull/1877))
 
 #### Deprecations
@@ -24,6 +24,7 @@
   ([#1877](https://github.com/pry/pry/pull/1877))
 
   ```ruby
+  # Deprecated, emits a warning.
   Pry.config.prompt = [proc {}, proc {}]
   ```
 
