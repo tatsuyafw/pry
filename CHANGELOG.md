@@ -38,17 +38,9 @@
   ([#1884](https://github.com/pry/pry/pull/1864))
 * Deleted deprecated `Pry::Prompt::MAP`
   ([#1866](https://github.com/pry/pry/pull/1866))
-* Deleted deprecated methods of `Pry::Helpers::BaseHelpers`
-  ([#1867](https://github.com/pry/pry/pull/1867))
-  * `mac_osx?`
-  * `linux?`
-  * `windows?`
-  * `windows_ansi?`
-  * `jruby?`
-  * `jruby_19?`
-  * `mri?`
-  * `mri_19?`
-  * `mri_2?`
+* Deleted deprecated methods of `Pry::Helpers::BaseHelpers` such as `mac_osx?`,
+  `linux?`, `windows?`, `windows_ansi?`, `jruby?`, `jruby_19?`, `mri?`,
+  `mri_19?`, `mri_2?` ([#1867](https://github.com/pry/pry/pull/1867))
 * Deleted deprecated `Pry::Command#text`
   ([#1865](https://github.com/pry/pry/pull/1865))
 * Deleted deprecated `Pry::Method#all_from_common`
