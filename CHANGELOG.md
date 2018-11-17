@@ -19,7 +19,8 @@
   ([#1874](https://github.com/pry/pry/pull/1874))
 * Deprecated `Pry.config.prompt = Pry::Prompt[:simple][:value]` in favor of
   `Pry.config.prompt = Pry::Prompt[:simple]` when setting Pry prompt via
-  `pryrc` ([#1877](https://github.com/pry/pry/pull/1877))
+  `pryrc`. `Pry::Prompt[:simple]` would return an instance of `Pry::Prompt`
+  instead of `Hash` ([#1877](https://github.com/pry/pry/pull/1877))
 * Deprecated setting prompt via an array of two procs:
   ([#1877](https://github.com/pry/pry/pull/1877))
 
